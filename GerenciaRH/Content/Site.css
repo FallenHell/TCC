@@ -1,0 +1,193 @@
+﻿body {
+    padding-top: 50px;
+    padding-bottom: 20px;
+}
+
+/* Set padding to keep content from hitting the edges */
+.body-content {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+
+/* Override the default bootstrap behavior where horizontal description lists 
+   will truncate terms that are too long to fit in the left column 
+*/
+.dl-horizontal dt {
+    white-space: normal;
+}
+
+/* Set width on the form input elements since they're 100% wide by default */
+input,
+select,
+textarea {
+    max-width: 280px;
+}
+
+/*TELA DE INDEX DO LOGIN E HOME*/
+.botaoMenu {
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.cardColaborador {
+    background-color: #FDFDFD;
+    border: 2px solid #8492A6;
+    border-radius: 28px;
+    width: 610px;
+    height: 139px;
+}
+
+.separador {
+    border: 1px solid #7E55F3;
+}
+
+.barraPesquisaColab {
+    border: 2px solid #8492A6;
+    width: 633px;
+    height: 52px;
+}
+
+.GraficoNota{
+    width:500px;
+    height:500px;
+}
+
+.CardFundoAnalista {
+    background-color: #F4F8F6;
+    border: 2px solid #8492A6;
+    border-radius: 25px;
+    width: 615px;
+    height: 600px;
+}
+
+/*TELA DE INDEX DE CADASTRO*/
+
+.cardFundoCadastro {
+    background-color: #FFFFFF;
+    border: 2px solid #8492A6;
+    border-radius: 25px;
+    width: 1160px;
+    height: 554px;
+}
+
+.cardInformacoes {
+    background-color: #FFFFFF;
+    border: 1px solid #8492A6;
+    border-radius: 10px;
+    width: 845px;
+    height: 258px;
+}
+
+/*HIGHLIGHT DE TELA ATUAL SELECIONADA*/
+a {
+    text-decoration: none;
+    color: #000;
+}
+
+    a:hover, a:focus {
+        color: #8492A6;
+        text-decoration: none;
+        outline: none;
+    }
+
+.active {
+    font-size: 30px;
+    color: #8492A6;
+    border-bottom: 5px solid #8492A6;
+}
+
+@media(max-width:1468px){
+    .cardColaborador {
+        background-color: #FDFDFD;
+        border: 2px solid #8492A6;
+        border-radius: 28px;
+        width:auto;
+        height:auto;
+    }
+
+    #GraficoNota{
+        width:425px;
+        height:425px;
+    }
+
+    .CardFundoAnalista {
+        background-color: #F4F8F6;
+        border: 2px solid #8492A6;
+        border-radius: 25px;
+        width: auto;
+        height: auto;
+    }
+
+    .cardFundoCadastro {
+        background-color: #FFFFFF;
+        border: 2px solid #8492A6;
+        border-radius: 10px;
+        height: auto;
+    }
+
+    .form-control .border{
+        width:auto;
+        height:auto;
+    }
+
+    .row {
+        width: auto;
+        height: auto;
+    }
+
+
+}
+
+@media(max-width:612px){
+    .CardDesligamentoComentario {
+        background-color: #FCFFFD;
+        border: 2px solid #8492A6;
+        border-radius: 15px;
+        width: auto;
+    }
+}
+
+/*TOOLTIP VIA CSS*/
+.tooltipCSS {
+    position: relative;
+    display: inline-block;
+}
+
+    .tooltipCSS .tooltiptextCSS {
+        visibility: hidden;
+        width: 120px;
+        background-color: black;
+        color: #fff;
+        text-align: center;
+        border-radius: 6px;
+        padding: 5px 0;
+        /* Position the tooltip */
+        position: absolute;
+        z-index: 1;
+    }
+
+    .tooltipCSS:hover .tooltiptextCSS {
+        visibility: visible;
+    }
+
+/*CSS DESLIGAMENTO*/
+
+.CardFundoDesligamento {
+    background-color: #FFFFFF;
+    border: 2px solid #8492A6;
+    border-radius: 25px;
+}
+
+.CardDesligamentoComentario {
+    background-color: #FCFFFD;
+    border: 2px solid #8492A6;
+    border-radius: 15px;
+}
+
+
+/*TOASTER CSS*/
+#toast-container.toast-top-full-width > div {
+    width: 96%;
+    margin-left: auto;
+    margin-right: auto;
+}

@@ -1,0 +1,54 @@
+﻿<nav class="navbar navbar-inverse navbar-expand-lg" style="z-index:1000;">
+    <!-- Brand and toggle get grouped for better mobile display -->
+    <div class="navbar-translate">
+        <a class="navbar-brand" style="padding-left:2rem;" href="#0">GerenciaRH</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <span class="navbar-toggler-icon"></span>
+            <link href="~/Content/Site.css" rel="stylesheet" />
+        </button>
+    </div>
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse">
+        <ul class="navbar-nav">
+            <li class="nav-item botaoMenu">
+                <a href='@Url.Action("Index", "Home")' class="nav-link"><img src="~/Resources/Icons/home.png" width="30" height="30"/>
+                    Home
+                </a>
+            </li>
+            @*<li class="nav-item botaoMenu">
+                <a href="#pablo" class="nav-link"><img src="~/Resources/Icons/mail.png" width="25" height="20" />
+                    Caixa de Entrada
+                </a>
+            </li>*@
+            <li class="nav-item botaoMenu">
+                <a href='@Url.Action("Index","Cadastro")' class="nav-link"><img src="~/Resources/Icons/pessoa.png" width="25" height="25" />
+                    Cadastro
+                </a>
+            </li>
+            <li class="nav-item botaoMenu">
+                <a href='@Url.Action("Index","Relatorio")' class="nav-link"><img src="~/Resources/Icons/relatorio.png" width="25" height="25" />
+                    Relatórios
+                </a>
+            </li>
+        </ul>
+        <ul class="navbar-nav ml-auto pr-5 pb-3">
+            <li class="dropdown nav-item">
+                <a href="#pablo" class="profile-photo dropdown-toggle nav-link" data-toggle="dropdown">
+                    <div class="profile-photo-small">
+                        <img src="~/Resources/Icons/pessoa_1 .png" alt="Circle Image" class="rounded-circle img-fluid pb-1">
+                    </div>
+                </a>
+                <div class="dropdown-menu dropdown-menu-right">
+                    <h6 class="dropdown-header">Menu de usuário</h6>
+                    @*<a href="#pablo" class="dropdown-item"><img src="~/Resources/Icons/pessoa.png" width="20" height="20" />Perfil</a>*@
+                    <a href="@Url.Action("EfetuarLogin","Login")" class="dropdown-item"><img src="~/Resources/Icons/logoff.png" width="20" height="20">Logoff</a>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- /.navbar-collapse -->
+    <!-- /.container-->
+</nav>

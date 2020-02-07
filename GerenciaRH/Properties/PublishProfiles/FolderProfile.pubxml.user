@@ -1,0 +1,1285 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit https://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\Users\gabriel.ferreri\Desktop\Publish</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="assets/css/material-kit.css">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/css/material-kit.css.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/css/material-kit.min.css">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/demo/demo.css">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/apple-icon.png">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/bg.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/bg2.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/bg3.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/bg7.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/city-profile.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/city.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/examples/clem-onojegaw.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/examples/clem-onojeghuo.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/examples/cynthia-del-rio.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/examples/mariya-georgieva.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/examples/olu-eletu.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/examples/studio-1.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/examples/studio-2.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/examples/studio-3.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/examples/studio-4.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/examples/studio-5.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/faces/avatar.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/faces/camp.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/faces/card-profile1-square.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/faces/card-profile2-square.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/faces/card-profile4-square.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/faces/card-profile5-square.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/faces/card-profile6-square.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/faces/christian.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/faces/kendall.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/faces/marc.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/favicon.png">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/landing.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/profile.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/profile_city.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/img/responsive-nav.gif">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/js/core/bootstrap-material-design.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/js/core/jquery.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/js/core/popper.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/js/material-kit.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/js/material-kit.js.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/js/material-kit.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/js/plugins/bootstrap-datetimepicker.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/js/plugins/jquery.sharrre.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/js/plugins/moment.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/js/plugins/nouislider.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/bootstrap-grid.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/bootstrap-reboot.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/bootstrap.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_alert.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_background-variant.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_badge.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_border-radius.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_box-shadow.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_breakpoints.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_buttons.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_caret.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_clearfix.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_float.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_forms.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_gradients.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_grid-framework.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_grid.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_hover.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_image.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_list-group.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_lists.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_nav-divider.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_navbar-align.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_pagination.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_reset-text.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_resize.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_screen-reader.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_size.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_table-row.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_text-emphasis.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_text-hide.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_text-truncate.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_transition.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/mixins/_visibility.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_align.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_background.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_borders.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_clearfix.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_display.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_embed.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_flex.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_float.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_position.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_screenreaders.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_sizing.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_spacing.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_text.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/utilities/_visibility.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_alert.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_badge.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_breadcrumb.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_button-group.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_buttons.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_card.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_carousel.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_close.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_code.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_custom-forms.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_dropdown.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_forms.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_functions.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_grid.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_images.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_input-group.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_jumbotron.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_list-group.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_media.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_mixins.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_modal.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_nav.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_navbar.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_pagination.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_popover.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_print.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_progress.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_reboot.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_root.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_tables.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_tooltip.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_transitions.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_type.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_utilities.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/bootstrap/scss/_variables.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/cards/_card-carousel.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/cards/_card-login.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/cards/_card-plain.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_alert.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_animations.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_breakpoints.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_buttons.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_colored-shadows.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_drawer.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_forms.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_hover.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_layout.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_navbar-colors.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_navs.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_type.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/mixins/_utilities.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/plugins/_plugin-datetime-picker.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/plugins/_plugin-nouislider.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_body.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_bootstrap-material-design-base.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_bootstrap-material-design.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_brand.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_buttons.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_card.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_carousel.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_code.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_colors-map.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_colors.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_custom-forms.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_drawer.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_dropdown.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_forms.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_layout.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_list-group.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_menu.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_modals.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_nav.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_pagination.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_shadow.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_snackbar.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_spacing.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_state.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_tables.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_tooltip.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/variables/_type.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_alerts.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_badges.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_buttons.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_cards.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_carousel.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_checkboxes.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_core-bootstrap.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_custom-forms.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_drawer.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_dropdown.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_example-pages.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_footers.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_forms.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_headers.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_images.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_info-areas.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_input-group.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_layout.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_list-group.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_misc.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_mixins.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_modal.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_nav.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_navbar.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_pagination.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_pills.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_popover.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_progress.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_radios.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_reboot.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_responsive.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_ripples.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_switches.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_tabs.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_togglebutton.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_tooltip.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_type.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="assets/scss/material-kit/_variables.scss">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.dll">
+      <publishTime>11/04/2019 09:40:54</publishTime>
+    </File>
+    <File Include="bin/Antlr3.Runtime.pdb">
+      <publishTime>11/04/2019 09:40:54</publishTime>
+    </File>
+    <File Include="bin/BuscaCEP.dll">
+      <publishTime>11/04/2019 09:40:54</publishTime>
+    </File>
+    <File Include="bin/Cep.dll">
+      <publishTime>11/04/2019 09:40:54</publishTime>
+    </File>
+    <File Include="bin/Cep.pdb">
+      <publishTime>11/04/2019 09:40:54</publishTime>
+    </File>
+    <File Include="bin/Chart.Mvc.dll">
+      <publishTime>11/04/2019 09:40:54</publishTime>
+    </File>
+    <File Include="bin/Chart.Mvc.pdb">
+      <publishTime>11/04/2019 09:40:54</publishTime>
+    </File>
+    <File Include="bin/Correios.dll">
+      <publishTime>11/04/2019 09:40:54</publishTime>
+    </File>
+    <File Include="bin/Correios.Net.dll">
+      <publishTime>11/04/2019 09:40:54</publishTime>
+    </File>
+    <File Include="bin/Correios.Net.pdb">
+      <publishTime>11/04/2019 09:40:54</publishTime>
+    </File>
+    <File Include="bin/Correios.pdb">
+      <publishTime>11/04/2019 09:40:54</publishTime>
+    </File>
+    <File Include="bin/Dapper.dll">
+      <publishTime>11/04/2019 09:40:54</publishTime>
+    </File>
+    <File Include="bin/GerenciaRH.dll">
+      <publishTime>11/05/2019 14:32:01</publishTime>
+    </File>
+    <File Include="bin/GerenciaRH.pdb">
+      <publishTime>11/05/2019 14:32:01</publishTime>
+    </File>
+    <File Include="bin/GerenciaRHBusiness.dll">
+      <publishTime>11/05/2019 14:31:41</publishTime>
+    </File>
+    <File Include="bin/GerenciaRHBusiness.pdb">
+      <publishTime>11/05/2019 14:31:41</publishTime>
+    </File>
+    <File Include="bin/GerenciaRHDao.dll">
+      <publishTime>11/05/2019 14:31:41</publishTime>
+    </File>
+    <File Include="bin/GerenciaRHDao.pdb">
+      <publishTime>11/05/2019 14:31:41</publishTime>
+    </File>
+    <File Include="bin/GerenciaRHEntity.dll">
+      <publishTime>11/04/2019 16:09:44</publishTime>
+    </File>
+    <File Include="bin/GerenciaRHEntity.pdb">
+      <publishTime>11/04/2019 16:09:44</publishTime>
+    </File>
+    <File Include="bin/HtmlAgilityPack.dll">
+      <publishTime>11/04/2019 09:40:54</publishTime>
+    </File>
+    <File Include="bin/HtmlAgilityPack.pdb">
+      <publishTime>11/04/2019 09:40:54</publishTime>
+    </File>
+    <File Include="bin/Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/Microsoft.Web.Infrastructure.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/Newtonsoft.Json.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.Helpers.resources.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.Mvc.resources.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.Optimization.resources.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.Razor.resources.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.WebPages.Deployment.resources.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.WebPages.Razor.resources.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/pt-br/System.Web.WebPages.resources.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.exe.config">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csc.rsp">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.exe.config">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/csi.rsp">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Build.Tasks.CodeAnalysis.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.CSharp.Scripting.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.Scripting.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CodeAnalysis.VisualBasic.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.CSharp.Core.targets">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.amd64.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.DiaSymReader.Native.x86.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.Managed.Core.targets">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/Microsoft.VisualBasic.Core.targets">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.AppContext.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Collections.Immutable.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Console.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.FileVersionInfo.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Diagnostics.StackTrace.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Compression.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.FileSystem.Primitives.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.AccessControl.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.IO.Pipes.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Reflection.Metadata.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.AccessControl.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Claims.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Algorithms.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Encoding.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.Primitives.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Cryptography.X509Certificates.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Security.Principal.Windows.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Text.Encoding.CodePages.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.ValueTuple.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.ReaderWriter.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XmlDocument.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/System.Xml.XPath.XDocument.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.exe.config">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/vbc.rsp">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/roslyn/VBCSCompiler.exe.config">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Helpers.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Mvc.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Optimization.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.Razor.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Deployment.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/System.Web.WebPages.Razor.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="bin/Util.dll">
+      <publishTime>11/04/2019 16:09:44</publishTime>
+    </File>
+    <File Include="bin/Util.pdb">
+      <publishTime>11/04/2019 16:09:44</publishTime>
+    </File>
+    <File Include="bin/WebGrease.dll">
+      <publishTime>11/04/2019 09:40:56</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.css">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.css.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.min.css">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Content/bootstrap-grid.min.css.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.css">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.css.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.min.css">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Content/bootstrap-reboot.min.css.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Content/bootstrap.css.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Content/bootstrap.min.css.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Content/estilo.css">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Content/Site.css">
+      <publishTime>11/05/2019 14:12:13</publishTime>
+    </File>
+    <File Include="Content/toastr.css">
+      <publishTime>11/05/2019 11:50:20</publishTime>
+    </File>
+    <File Include="Content/toastr.less">
+      <publishTime>11/05/2019 11:50:20</publishTime>
+    </File>
+    <File Include="Content/toastr.min.css">
+      <publishTime>11/05/2019 11:50:20</publishTime>
+    </File>
+    <File Include="Content/toastr.scss">
+      <publishTime>11/05/2019 11:50:20</publishTime>
+    </File>
+    <File Include="favicon.ico">
+      <publishTime>11/04/2019 09:40:54</publishTime>
+    </File>
+    <File Include="Global.asax">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Resources/Background.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Resources/foto1.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Resources/foto2.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Resources/fotoprinc.jpg">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Resources/Icons/avaliacao.png">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Resources/Icons/demissao.png">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Resources/Icons/Edit.png">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Resources/Icons/home.png">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Resources/Icons/logoff.png">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Resources/Icons/lupa.png">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Resources/Icons/mail.png">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Resources/Icons/pessoa.png">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Resources/Icons/pessoa_1 .png">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Resources/Icons/pessoa_2 .png">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Resources/Icons/pessoa_3 .png">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Resources/Icons/pessoa_4 .png">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Resources/Icons/relatorio.png">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Resources/Icons/setaBaixo.png">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Resources/Icons/setaCima.png">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.js.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.bundle.min.js.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.js.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/bootstrap.min.js.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/Chart.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper-utils.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper-utils.js.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper-utils.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper-utils.min.js.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper.js.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/esm/popper.min.js.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/inputmask/bindings/inputmask.binding.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/inputmask/dependencyLibs/inputmask.dependencyLib.jqlite.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/inputmask/dependencyLibs/inputmask.dependencyLib.jquery.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/inputmask/dependencyLibs/inputmask.dependencyLib.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/inputmask/global/window.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/inputmask/inputmask.date.extensions.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/inputmask/inputmask.extensions.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/inputmask/inputmask.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/inputmask/inputmask.numeric.extensions.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/inputmask/jquery.inputmask.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/inputmask/min/bindings/inputmask.binding.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/inputmask/min/dependencyLibs/inputmask.dependencyLib.jqlite.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/inputmask/min/dependencyLibs/inputmask.dependencyLib.jquery.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/inputmask/min/dependencyLibs/inputmask.dependencyLib.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/inputmask/min/global/window.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/inputmask/min/inputmask.date.extensions.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/inputmask/min/inputmask.extensions.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/inputmask/min/inputmask.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/inputmask/min/inputmask.numeric.extensions.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/inputmask/min/jquery.inputmask.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.min.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery-3.3.1.slim.min.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/jquery.validate.unobtrusive.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/login.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/modernizr-2.8.3.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/popper-utils.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/popper-utils.js.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/popper-utils.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/popper-utils.min.js.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/popper.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/popper.js.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/popper.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/popper.min.js.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/README.md">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/script.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/toastr.js">
+      <publishTime>11/05/2019 11:50:21</publishTime>
+    </File>
+    <File Include="Scripts/toastr.min.js">
+      <publishTime>11/05/2019 11:50:21</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper-utils.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper-utils.js.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper-utils.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper-utils.min.js.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.js.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.min.js">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Scripts/umd/popper.min.js.map">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Views/AtualizarUsuario/Index.cshtml">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Views/Avaliacao/Index.cshtml">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Views/Cadastro/Index.cshtml">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Views/Desligamento/Index.cshtml">
+      <publishTime>11/04/2019 15:48:33</publishTime>
+    </File>
+    <File Include="Views/Home/Index.cshtml">
+      <publishTime>11/05/2019 11:50:21</publishTime>
+    </File>
+    <File Include="Views/Login/Index.cshtml">
+      <publishTime>11/05/2019 14:27:53</publishTime>
+    </File>
+    <File Include="Views/Relatorio/Index.cshtml">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Views/Shared/Error.cshtml">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Views/Shared/_CardUsuarios.cshtml">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Views/Shared/_Layout.cshtml">
+      <publishTime>11/05/2019 14:03:43</publishTime>
+    </File>
+    <File Include="Views/Shared/_Menu.cshtml">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Views/Shared/_NavBar.cshtml">
+      <publishTime>11/05/2019 13:59:09</publishTime>
+    </File>
+    <File Include="Views/Web.config">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Views/_ViewStart.cshtml">
+      <publishTime>11/04/2019 09:40:53</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/05/2019 14:31:44</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

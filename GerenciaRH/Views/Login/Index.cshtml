@@ -1,0 +1,155 @@
+﻿@model GerenciaRH.Model.LoginModel
+@{
+    ViewBag.Title = "Login";
+    Layout = null;
+}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    @Styles.Render("~/Content/css")
+    @Styles.Render("~/Content/materialcss")
+    @Scripts.Render("~/bundles/modernizr")
+
+    <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Roboto:300,400,500,700|Roboto+Slab:400,700|Material+Icons" />
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/latest/css/font-awesome.min.css">
+    <link href="~/Content/toastr.css" rel="stylesheet" />
+    <script src="~/Scripts/jquery-3.3.1.min.js"></script>
+    <script src="~/Scripts/toastr.min.js"></script>
+    <style>
+        .hero {
+            background-image: url('/Resources/background03.jpg');
+            transition: background 1s linear;
+        }
+
+        /*LOADER CSS*/
+        .loader {
+            border: 5px solid #d6d6d6;
+            /* Light grey */
+            border-top: 5px solid #9124a3;
+            /* Blue */
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 2s linear infinite;
+            margin: 40px auto;
+            display: none;
+        }
+
+        .loader-container {
+            text-align: center;
+            position: relative;
+            width: 100%;
+            z-index: 1;
+            z-index: 999;
+        }
+
+        @@keyframes spin {
+            0% {
+                transform: rotate(0deg);
+            }
+
+            100% {
+                transform: rotate(360deg);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div id="hero" class="section section-signup page-header hero">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4 col-md-6 ml-auto mr-auto">
+                    <div class="card card-login">
+                        @using (Html.BeginForm("EfetuarLogin", "Login", FormMethod.Post))
+                        {
+                            <div class="card-header card-header-primary text-center">
+                                <h2 class="card-title">Login</h2>
+                            </div>
+                            <div class="card-body">
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="material-icons">face</i>
+                                        </span>
+                                    </div>
+                                    @Html.TextBoxFor(x => x.Usuario.Racf, new { @class = "form-control", @placeholder = "Racf..." })
+                                </div>
+                                <div class="input-group">
+                                    <div class="input-group-prepend">
+                                        <span class="input-group-text">
+                                            <i class="material-icons">lock_outline</i>
+                                        </span>
+                                    </div>
+                                    @Html.TextBoxFor(x => x.Usuario.Senha, new { @class = "form-control", @placeholder = "Senha...", @type = "password" })
+                                </div>
+                            </div>
+                            <div class="footer text-center" style="padding-bottom:20px">
+                                <button id="btnLogin" class="btn btn-primary" type="submit">
+                                    Efetuar Login
+                                </button>
+                            </div>
+                            @*DIV CARREGAMENTO*@
+                            <div class="loader-container">
+                                <div class="loader"></div>
+                            </div>
+                        }
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
+<footer class="footer" data-background-color="black">
+    <div class="copyright ml-auto mr-auto">
+        &copy;
+        <script>
+            document.write(new Date().getFullYear() + " GerenciaRH - Todos os direitos reservados")
+        </script>
+    </div>
+</footer>
+<script>
+    $(document).ready(function () {
+
+        if ('@TempData["Erro"]' != "") {
+            ToastrOptionFailure();
+            toastr.error('@TempData["Erro"]');
+        }
+        $('.card-login>form').submit(function () {
+            $('.loader').show();
+        });
+
+        function ToastrOptionFailure() {
+            toastr.options = {
+                "closeButton": true,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": true,
+                "positionClass": "toast-top-left",
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            }
+        }
+
+        var indexAtual = 0;
+        var images = ["/Resources/background02.jpg", "/Resources/background03.jpg","/Resources/background04.jpg","/Resources/background05.jpg"];
+        var tamanho = images.length - 1
+
+        function alterarPlanoDeFundo() {
+            $('#hero').css('background-image', 'url(' + images[indexAtual] + ')');
+            indexAtual = (indexAtual < tamanho) ? indexAtual + 1 : 0;
+        }
+
+        alterarPlanoDeFundo();
+        window.setInterval(alterarPlanoDeFundo, 8000)
+    });
+</script>

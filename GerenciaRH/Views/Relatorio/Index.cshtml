@@ -1,0 +1,101 @@
+﻿@model GerenciaRH.Model.RelatorioModel
+@using Chart.Mvc.ComplexChart;
+@using Chart.Mvc.Extensions
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Scripts{
+    <script type="text/javascript" src="~/Scripts/script.js"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+
+}
+<script type="text/javascript" src="~/Scripts/script.js"></script>
+<script src="~/Scripts/Chart.js"></script>
+
+
+<div class="col-md-12 col-xl-12">
+    <div class="col-md-12 CardFundoDesligamento">
+        <div class="row pl-3">
+            <h2>Relatórios</h2>
+        </div>
+        <div class="row pl-3">
+            <div class="col-md-12">
+                <div class="row">
+                    @*<div class="col-md-10">
+                        <a href="#relatorioMensal" class="btn btn-dark text-white" role="button" data-toggle="collapse">Relatório Mensal</a>
+                        <a href="#relatorioAnual" class="btn btn-dark text-white" role="button" data-toggle="collapse">Relatório Anual</a>
+                    </div>*@
+                    <div class="col-md-2">
+                        <img class="ml-5" src="~/Resources/Icons/excel.png" width="30px" height="30px" />
+                    </div>
+                </div>
+                <div class="row pt-3" id="relatorioMensal">
+                    <div class="col-md-12">
+                        <div class="row">
+                            <div class="col-md-4">
+                                @{
+                                    var notas = new[] { "Gerente", "GerenteRH", "FuncionarioRH","Funcionario" };
+                                    var qtdNotas = new List<double> {Model.Gerente,Model.GerenteRH,Model.FuncionarioRH,Model.Funcionario};
+                                    var barChart = new BarChart();
+                                    barChart.ComplexData.Labels.AddRange(notas);
+
+                                    barChart.ComplexData.Datasets.AddRange(new List<ComplexDataset>{new ComplexDataset
+                                      {
+                                              Data = qtdNotas,
+                                              Label = "Média de gastos empresariais",
+                                              FillColor = "rgba(60, 72, 88, 1)",
+                                              StrokeColor = "rgba(60, 72, 88, 1)",
+                                              PointColor = "rgba(60, 72, 88, 1)",
+                                              PointHighlightStroke = "rgba(60, 72, 88, 1)",
+                                      }
+                                                                                             });
+                                }
+                                <label for="#GraficoGasto" class="font-weight-bold">Média de gastos empresariais</label>
+                                <canvas id="GraficoGasto" class="GraficoNota pl-3 pt-3" style="width:250px; height:192px;"></canvas>
+                                @Html.CreateChart("GraficoGasto", barChart)
+                                <div class="CardDesligamentoComentario">
+                                    <p class="p-2">Gastos mensais da empresa: @Model.Total</p>
+                                </div>
+                            </div>
+                            <div class="col-md-7">
+                                <table class="table table-striped border ml-5">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">RACF</th>
+                                            <th scope="col">Nome</th>
+                                            <th scope="col">Ultima Nota</th>
+                                            <th scope="col">Salario</th>
+                                        </tr>
+                                    </thead>
+                                    @foreach (var usuario in Model.listUsuarios)
+                                    {
+                                        <tr>
+                                            <td>
+                                                @usuario.Racf
+                                            </td>
+
+                                            <td>
+                                                @usuario.NomeUsuario
+                                            </td>
+
+                                            <td>
+                                                @usuario.Nota
+                                            </td>
+
+                                            <td>
+                                                @usuario.Salario
+                                            </td>
+                                        </tr>
+                                    }
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+</div>
+

@@ -1,0 +1,130 @@
+﻿@model GerenciaRH.Model.UsuarioModel
+@using Util.Enums
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Scripts{
+    <script type="text/javascript" src="~/Scripts/script.js"></script>
+}
+@using (Html.BeginForm("UpdateUsuario", "AtualizarUsuario", FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.Usuario.Racf)
+    <div class="col-md-12 col-xl-12">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="font-weight-bold">Informações do Usuário</h2>
+                <span>Utilize essa parte do sistema atualizar as informações do usuário</span>
+            </div>
+        </div>
+        <div class="row pl-3 pt-4">
+            <div class="col-md-5">
+                <div class="row CardDesligamentoComentario">
+                    <div class="col-md-2 p-3">
+                        <img src="~/Resources/Icons/pessoa_@Model.Usuario.IdUsuario .png" height="100" width="100" />
+                    </div>
+                    <div class="col-md-7 pt-3 p-3">
+                        <table>
+                            <tr>
+                                <td class="p-2">Nome: @Model.Usuario.NomeUsuario</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2">RACF: @Model.Usuario.Racf</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col-md-12">
+                <div class="col-md-10 CardFundoDesligamento ">
+                    <div class="row">
+                        <span class="pl-4 pt-2">Quesitos a serem avaliados:</span>
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-3 pt-3">
+                            <div class="pl-3">
+                                @Html.LabelFor(x => x.Usuario.NomeCargo, new { @class = "pb-2" })
+                                @Html.DropDownListFor(o => o.Cargo.TipoCargo, Enum.GetValues(typeof(ETipoCargo)).Cast<ETipoCargo>
+                                                  ().Select(x => new SelectListItem { Text = x.ToString(), Value = ((int)x).ToString() }), @Model.Cargo.NomeCargo, htmlAttributes: new { @class = "form-control border pl-2", @id = "txtCargo2" })
+
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="row">
+                        <div class="col-md-2">
+                            <div class="pl-1 p-4">
+                                @Html.LabelFor(x => x.Usuario.CEP, new { @class = "pb-2" })
+
+
+                                <br />
+                                <br />
+                                <br />
+
+                                @Html.LabelFor(x => x.Usuario.Email, new { @class = "pb-2" })
+
+
+
+                            </div>
+                        </div>
+                        <div class="col-md-3 pt-3">
+                            <div>
+                                @Html.TextBoxFor(x => x.Usuario.CEP, new { @class = "form-control border", @id = "txtCep" })
+                                <br />
+                                <br />
+                                @Html.TextBoxFor(x => x.Usuario.Email, new { @class = "form-control border", @style = "width:600px", @id = "txtEmail" })
+
+                            </div>
+                        </div>
+                        <div class="col-md-2">
+                            <div class="pt-3">
+                                @Html.LabelFor(x => x.Usuario.Endereco, new { @class = "pb-2" })
+                                @Html.LabelFor(x => x.Usuario.NumeroEndereco, new { @class = "pb-2" })
+                            </div>
+                        </div>
+                        <div class="col-md-3 pt-3">
+                            <div>
+                                @Html.TextBoxFor(x => x.Usuario.Endereco, new { @class = "form-control border", @id = "txtEndereco" })
+                                @Html.TextBoxFor(x => x.Usuario.NumeroEndereco, new { @class = "form-control border", @id = "txtNumeroEndereco" })
+
+                            </div>
+                        </div>
+
+
+                    </div>
+
+                    <div class="row">
+                        <div class="col-md-9">
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-dark" type="button" data-toggle="modal" data-target="#modalCancelarAvaliacao">Cancelar</button>
+                            <button class="btn btn-success" type="submit">Atualizar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<!--MODAL-->
+<div class="modal fade" id="modalCancelarAvaliacao" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="false">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cancelar Avaliação?</h5>
+            </div>
+            <div class="modal-body">
+                <p>Tem certeza que deseja cancelar a alteração?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="location.href='@Url.Action("Index","Home")'">Retornar para home</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Continuar</button>
+            </div>
+        </div>
+    </div>
+</div>
+

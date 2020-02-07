@@ -1,0 +1,67 @@
+﻿@{
+    Layout = null;
+}
+
+@if (Model.usuarioLogado != null)
+{
+    if (Model.usuarioLogado.IdCargo == 1) // Adiministrador
+    {
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="dropdown nav-item">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                        <i class="material-icons">apps</i> Turma
+                    </a>
+                    <div class="dropdown-menu dropdown-with-icons">
+                        <a href="./index.html" class="dropdown-item">
+                            <i class="material-icons">layers</i> All Components
+                        </a>
+                        <a href="https://demos.creative-tim.com/material-kit/docs/2.1/getting-started/introduction.html" class="dropdown-item">
+                            <i class="material-icons">content_paste</i> Documentation
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    }
+    else if (Model.usuarioLogado.IdCargo == 2) // Facilitador
+    {
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="dropdown nav-item">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                        <i class="material-icons">apps</i> Turma
+                    </a>
+                    <div class="dropdown-menu dropdown-with-icons">
+                        <a href="./index.html" class="dropdown-item">
+                            <i class="material-icons">layers</i> All Components
+                        </a>
+                        <a href="https://demos.creative-tim.com/material-kit/docs/2.1/getting-started/introduction.html" class="dropdown-item">
+                            <i class="material-icons">content_paste</i> Documentation
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    }
+    else if (Model.usuarioLogado.IdCargo == 3) // Participador
+    {
+        <div class="collapse navbar-collapse">
+            <ul class="navbar-nav ml-auto">
+                <li class="dropdown nav-item">
+                    <a href="#" class="dropdown-toggle nav-link" data-toggle="dropdown">
+                        <i class="material-icons">apps</i> Gestão
+                    </a>
+                    <div class="dropdown-menu dropdown-with-icons">
+                        <a href="./index.html" class="dropdown-item">
+                            <i class="material-icons">layers</i> All Components
+                        </a>
+                        <a href="https://demos.creative-tim.com/material-kit/docs/2.1/getting-started/introduction.html" class="dropdown-item">
+                            <i class="material-icons">content_paste</i> Documentation
+                        </a>
+                    </div>
+                </li>
+            </ul>
+        </div>
+    }
+}

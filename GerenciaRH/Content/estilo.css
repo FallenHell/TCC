@@ -1,0 +1,300 @@
+                        /*------------------------------------*/
+                                /*Tela de login*/
+                        /*------------------------------------*/
+
+#bodyLogin{
+    background-image: url('foto2.jpg');
+    background-repeat: no-repeat;
+    bottom: 0;
+    padding: 3em;
+    text-align: center;
+}
+
+#h2login {
+    font:normal 50pt Courier;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 51px;
+    text-align: center;
+    opacity: 100;
+}
+
+#usuario {
+    border-bottom: solid 1px #423e3e; /*Coloca borda somente na parte de baixo*/
+    background-color: rgb(235, 235, 235);
+    width: 250px;
+    height: 45px;
+    margin-top: 65px;
+    border-radius: 10px;
+    border: 2px solid #8492A6;
+}
+
+#senha {
+    border-bottom: solid 1px #423e3e; /*Coloca borda somente na parte de baixo*/
+    background-color: rgb(235, 235, 235);
+    width: 250px;
+    height: 45px;
+    margin-top: 25px;
+    border-radius: 10px;
+    border: 2px solid #8492A6;
+}
+
+#entrar {
+    border: 2px solid rgb(190, 190, 190);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 45px
+}
+
+#h1Login{
+    text-align: center;
+    font:normal 50pt Courier;
+    color: rgb(42, 197, 114);
+    margin-right: 1200px;
+}
+
+#erro {
+    background-color: rgb(197, 71, 71);
+    padding: 15px 32px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    border-radius: 5px;
+    margin-top: 25px
+
+}
+
+#sectionLogin {
+    background-color: #8492A6;
+    border: 2px solid #8492A6;
+    border-radius: 50px;
+    opacity: 0.95;
+    width: 414.24px;
+    height: 638px;
+    margin-left: auto;
+    margin-right: 200px;
+}
+
+.sectionMenuSubtitulo h4 {
+    color: #FDFDFD;
+    font-family: Lato;
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 28px;
+    text-align: center;
+    padding: 5px;
+}
+
+.sectionMenuTitulo h1, h2 {
+    color: #FDFDFD;
+    font-family: Lato;
+    font-size: 35px;
+    font-weight: 700;
+    line-height: 51px;
+    width: 414.24px;
+    text-align: center;
+    padding-top: 80px;
+}
+
+.imagem-background-principal {
+    background-image: url('../../Resources/Background.jpg');
+    background-size: cover;
+
+}
+
+
+                        /*------------------------------------*/
+                                /*Tela de Menu*/
+                        /*------------------------------------*/
+
+
+
+#bodyMenu{
+    background-color: aquamarine;
+    margin-top: 90px;
+}
+
+.butmenu{
+    background: floralwhite;
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    position: fixed;
+    top: 25px;
+    left: 25px;
+}
+
+
+                        /*As barrinhas do botão-menu*/
+
+
+.hamb{
+    position: relative;
+    display: block;
+    background: black;
+    width: 30px;
+    height: 2px;
+    top: 28px;
+    left: 14px;
+    transform: rotate(45deg);
+    transition: .5s ease-in-out
+}
+
+
+.hamb::after,
+.hamb::before{
+    background: black;
+    content: '';
+    display: block;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    transition: .5s ease-in-out
+}
+
+.hamb::after{
+    top: 0px;
+}/*posicao da barra*/
+
+.hamb::before{
+    top: 0;
+    transform: rotate(90deg);
+
+}/*posicao da barra e rotacao*/
+
+#menuhamb{
+    display: none;
+}/*esconder check box*/
+
+
+input:checked ~ label .hamb{
+    transform: rotate(180deg);
+} /*rotação do conjunto*/
+
+
+input:checked ~ label .hamb::before{
+    transform: rotate(180deg);
+    top: -10px;
+}/*rotação da barra e posição*/
+
+input:checked ~ label .hamb::after{
+    transform: rotate(180deg);
+    top: 10px;
+}/*rotação da barra e posição*/
+
+
+                   /*Aqui acaba barrinhas do botão-menu*/
+
+
+input:checked ~ .menu{
+    height: 100%; 
+    width: 0%; /*a medida muda quando Js é executado*/
+    position: fixed; 
+    z-index: 1; 
+    overflow-x: hidden; /* desabilita scroll*/
+    padding-top: 60px; 
+    transition: 0.5s; /*animação*/
+    display:block;
+} /*ao preencher o check box*/
+
+  .menu a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #374b43;
+    display: block;
+    transition: 0.5s;
+  }
+
+  .menu li{
+      list-style: none;   
+      text-decoration: none;
+  }
+
+  .menu a:hover {
+    color: #f1f1f1;/*muda a cor quando colocar o mouse*/
+  }
+
+  #dropmenu{
+    text-decoration: none;
+  }
+
+  @media screen and (max-height: 450px) {
+    .menu {padding-top: 15px;}
+    .menu a {font-size: 18px;}
+  }
+
+
+/*------------------------------------*/
+/*Home (gestor)*/
+/*------------------------------------*/
+
+.text1 {
+    color: #47525E;
+    font-family: Lato;
+    font-size: 1.75rem;
+    text-align: left;
+    margin-bottom: -7.813rem;
+}
+
+.text2 {
+    color: #47525E;
+    font-family: Lato;
+    font-size: 1.25rem;
+    text-align: left;
+    margin-top: 8.625rem;
+}
+
+.ac_box {
+    border: 2px solid #8492A6;
+    border-radius: 1.75rem;
+    width: 38.125rem;
+    height: 8.688rem;
+    text-align: center;
+    height: 6.688rem;
+    margin-top: -2.950rem;
+}
+
+.linha-vertical {
+    height: 83px;
+    border-left: 1px solid;
+    margin-left: 9.375rem;
+    margin-top: 0.688rem;
+}
+
+.userbox {
+    color: #47525E;
+    font-family: Kanit;
+    font-size: 0.875rem;
+    margin-right: 14.063rem;
+    margin-top: -5.875rem;
+}
+
+.graph {
+    display: block;
+    width: 43.75rem;
+    height: 18.75rem;
+    margin-top: 7.5rem;
+    padding-top:1rem;
+}
+
+.chartjs-render-monitor {
+    margin-top: -6.125rem;
+}
+
+#busca {
+    /* Apenas para centralizar o form na página */
+    margin: 0 auto;
+    width: 400px;
+    /* Para ver as bordas do formulário */
+    padding: 1em;
+    border: 1px solid #8492A6;
+    border-radius: 1em;
+    margin-left: 860px;
+}
+

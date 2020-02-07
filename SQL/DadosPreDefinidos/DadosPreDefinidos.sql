@@ -1,0 +1,20 @@
+insert into Impedimento values ('DispensaMedica')
+insert into Impedimento values ('LicencaMedica')
+insert into Impedimento values ('BoaAvaliacao')
+insert into Impedimento values ('Aposentadoria')
+insert into Impedimento values ('Dissidio')
+insert into Impedimento values ('NaoTemImpedimento')
+
+insert into TipoLog values ('Exclusao')
+insert into TipoLog values ('Inclusao')
+insert into TipoLog values ('Atualizacao')
+
+insert into TipoChat values ('Duvida')
+insert into TipoChat values ('Reclamacao')
+insert into TipoChat values ('Avaliacao')
+
+insert into Cargo values ('Gestor')
+insert into Cargo values ('Gerente')
+insert into Cargo values ('GerenteRH')
+insert into Cargo values ('FuncionarioRH')
+insert into Cargo values ('Funcionario')

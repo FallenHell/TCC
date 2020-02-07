@@ -1,0 +1,48 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>Cep</name>
+    </assembly>
+    <members>
+        <member name="T:CepLibrary.Cep">
+            <summary>
+            Scraps addresses from Correios' website.
+            </summary>
+            <summary>
+            Sanitizes CEPs.
+            </summary>
+        </member>
+        <member name="M:CepLibrary.Cep.Scrap(System.String)">
+            <summary>
+            Requests the Correios' website for the given CEP's address, scraps the HTML and returns it.
+            </summary>
+            <param name="cep">CEP of the address</param>
+            <returns>The scraped address or null if no address was found for the given CEP</returns>
+            <exception cref="T:CepLibrary.ScrapException">If an unexpected HTML if found</exception>
+        </member>
+        <member name="M:CepLibrary.Cep.Scrap(System.String,System.Net.IWebProxy)">
+            <summary>
+            Requests the Correios' website for the given CEP's address, scraps the HTML and returns it.
+            </summary>
+            <param name="cep">CEP of the address</param>
+            <param name="proxy">Proxy to use for the request</param>
+            <returns>The scraped address or null if no address was found for the given CEP</returns>
+            <exception cref="T:System.ArgumentNullException">If the given proxy is null</exception>
+            <exception cref="T:CepLibrary.ScrapException">If an unexpected HTML if found</exception>
+        </member>
+        <member name="M:CepLibrary.Cep.Sanitize(System.String)">
+            <summary>
+            Sanizites a CEP (Código de Endereçamento Postal).
+            "30130-010" becomes "30130010".
+            "foo" becomes null.
+            </summary>
+            <param name="cep">CEP to sanitize</param>
+            <returns>The given CEP without mask or null if the given CEP is not valid</returns>
+        </member>
+        <member name="T:CepLibrary.ScrapException">
+            <summary>
+            Got an unexpected HTML.
+            </summary>
+        </member>
+    </members>
+</doc>

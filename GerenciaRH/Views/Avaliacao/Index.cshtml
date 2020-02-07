@@ -1,0 +1,122 @@
+﻿@model GerenciaRH.Model.UsuarioModel
+@using Util.Enums
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Scripts{
+    <script type="text/javascript" src="~/Scripts/script.js"></script>
+}
+@using (Html.BeginForm("EfetuarAvaliacao", "Avaliacao", FormMethod.Post))
+{
+    @Html.HiddenFor(x => x.UsuarioAvaliacao.IdUsuario)
+    @Html.HiddenFor(x => x.Usuario.Racf)
+    <div class="col-md-12 col-xl-12">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="font-weight-bold">Avaliação</h2>
+                <span>Utiliza essa parte do sistema para avaliar o funcionário</span>
+            </div>
+        </div>
+        <div class="row pl-3 pt-4">
+            <div class="col-md-5">
+                <div class="row CardDesligamentoComentario">
+                    <div class="col-md-2 p-3">
+                        <img src="~/Resources/Icons/pessoa_@Model.UsuarioAvaliacao.IdUsuario .png" height="100" width="100" />
+                    </div>
+                    <div class="col-md-7 pt-3 p-3">
+                        <table>
+                            <tr>
+                                <td class="p-2">Nome: @Model.UsuarioAvaliacao.NomeUsuario</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2">Cargo: @Model.UsuarioAvaliacao.NomeCargo</td>
+                            </tr>
+                            <tr>
+                                <td class="p-2">Racf: @Model.UsuarioAvaliacao.Racf</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="row pt-3">
+            <div class="col-md-12">
+                <div class="col-md-10 CardFundoDesligamento ">
+                    <div class="row">
+                        <span class="pl-4 pt-2">Quesitos a serem avaliados:</span>
+                    </div>
+                    <div class="row pl-4 p-2">
+                        <div class="col-md-4">
+                            <h4>Entrega de deveres:</h4>
+                        </div>
+                        <div class="col-md-8">
+                            @Html.DropDownListFor(x => x.Avaliacao.NotaDeveres, new SelectList(Enum.GetValues(typeof(ETipoNota))), "Selecione a nota...", new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="row pl-4 p-2">
+                        <div class="col-md-4">
+                            <h4>Trabalho em Equipe</h4>
+                        </div>
+                        <div class="col-md-8">
+                            @Html.DropDownListFor(x => x.Avaliacao.NotaEquipe, new SelectList(Enum.GetValues(typeof(ETipoNota))), "Selecione a nota...", new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="row pl-4 p-2">
+                        <div class="col-md-4">
+                            <h4>Desenvolvimento pessoal:</h4>
+                        </div>
+                        <div class="col-md-8">
+                            @Html.DropDownListFor(x => x.Avaliacao.NotaDesenv, new SelectList(Enum.GetValues(typeof(ETipoNota))), "Selecione a nota...", new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="row pl-4 p-2">
+                        <div class="col-md-4">
+                            <h4>Relacionamento com o cliente:</h4>
+                        </div>
+                        <div class="col-md-8">
+                            @Html.DropDownListFor(x => x.Avaliacao.NotaClientes, new SelectList(Enum.GetValues(typeof(ETipoNota))), "Selecione a nota...", new { @class = "form-control" })
+                        </div>
+                    </div>
+                    <div class="row pl-4 p-2">
+                        <div class="col-md-2">
+                            <h4>Comentário do Gestor:</h4>
+                        </div>
+                    </div>
+                    <div class="row pl-4 pb-4">
+                        <div class="col-md-6 CardDesligamentoComentario">
+                            @Html.TextAreaFor(x => x.ComentarioAvaliacaoGestor, new { @class = "form-control col-md-12", @rows = "8", @id = "comentarioAvaliacao" })
+                            <p><label for="review"></label> <small class="caracteres"></small></p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-9">
+                        </div>
+                        <div class="col-md-3">
+                            <button class="btn btn-dark" type="button" data-toggle="modal" data-target="#modalCancelarAvaliacao">Cancelar</button>
+                            <button class="btn btn-success" type="submit">Avaliar</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+}
+<!--MODAL-->
+<div class="modal fade" id="modalCancelarAvaliacao" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true" data-backdrop="false">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel">Cancelar Avaliação?</h5>
+            </div>
+            <div class="modal-body">
+                <p>Tem certeza que deseja cancelar a avaliação?</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-primary" onclick="location.href='@Url.Action("Index","Home")'">Retornar para home</button>
+                <button type="button" class="btn btn-secondary" data-dismiss="modal">Continuar</button>
+            </div>
+        </div>
+    </div>
+</div>
+

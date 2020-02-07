@@ -1,0 +1,8 @@
+bin
+debug
+obj
+
+.vscode
+.vs
+/GerenciaRH/Properties/PublishProfiles/FolderProfile1.pubxml
+/GerenciaRH/Properties/PublishProfiles/FolderProfile1.pubxml.user

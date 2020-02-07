@@ -1,0 +1,230 @@
+﻿@model GerenciaRH.Model.UsuarioModel
+@using Chart.Mvc.ComplexChart;
+@using Chart.Mvc.Extensions
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+@section Scripts{
+
+    <script type="text/javascript" src="~/Scripts/script.js"></script>
+    <script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+
+}
+<script type="text/javascript" src="~/Scripts/script.js"></script>
+<script src="~/Scripts/Chart.js"></script>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+</head>
+<body>
+    <div class="col-xl-12 col-md-12">
+        <div class="row">
+            <div class="col-md-6">
+                <div class="pl-4">
+                    <h3 class="font-weight-bold">
+                        Avaliação de Colaboradores
+                    </h3>
+                    <span>Aqui é mostrado o gráfico e seus colaboradores</span>
+                </div>
+                <div id="cardColaboradores" class="pl-5 pt-5 animated bounce">
+                    <div class="cardColaborador">
+                        <div class="col-12">
+                            <div class="row">
+                                <div class="col-md-3 pt-2">
+                                    <img src="~/Resources/Icons/pessoa_@Model.Usuario.IdUsuario .png" width="120" height="120" style="border-radius:50%" />
+                                </div>
+                                <div class="separador">
+                                </div>
+                                @*TABELAS COM INFORMAÇÕES DA MODEL*@
+                                <div class="col-md-2">
+                                    <div class="pt-2">
+                                        <table>
+                                            <tr>
+                                                <td class="pb-2">
+                                                    Nome:
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="pb-2">
+                                                    Cargo:
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="pb-2">
+                                                    Racf:
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                                <div class="col-md-5">
+                                    <div class="pt-2">
+                                        <table>
+                                            <tr>
+                                                <td class="pb-2 font-weight-bold">
+                                                    @Model.Usuario.NomeUsuario
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="pb-2 font-weight-bold">
+                                                    @Model.Usuario.NomeCargo
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <td class="pb-2 font-weight-bold">
+                                                    @Model.Usuario.Racf
+                                                </td>
+                                            </tr>
+                                        </table>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                <label for="#GraficoNota" class="font-weight-bold mt-3">Média da nota de avaliações anuais</label>
+                </div>
+                @*COLOCAR GRAFICO AQUI POR FAVOR*@
+
+                @{
+
+                    var notas = new[] { "A", "B", "C" };
+                    var qtdNotas = new List<double> { @Model.QuantidadeA, Model.QuantidadeB, Model.QuantidadeC };
+
+
+
+                    var barChart = new BarChart();
+                    barChart.ComplexData.Labels.AddRange(notas);
+
+                    barChart.ComplexData.Datasets.AddRange(new List<ComplexDataset>
+                                                                                                                                            {
+                                                              new ComplexDataset
+                                                              {
+                                                                      Data = qtdNotas,
+                                                                      Label = "Notas dos Funcionarios",
+                                                                      FillColor = "rgba(220,220,0,0.2)",
+                                                                      StrokeColor = "rgba(220,220,0,1)",
+                                                                      PointColor = "rgba(220,220,220,1)",
+                                                                      PointHighlightStroke = "rgba(220,220,220,1)",
+                                                              }
+                                                    });
+                }
+                <canvas id="GraficoNota" @*width="500" height="500"*@ class="GraficoNota pl-5 pt-5"></canvas>
+                @Html.CreateChart("GraficoNota", barChart)
+            </div>
+
+
+            <div class="col-md-6">
+                <div id="pesquisaUsuario" class="pt-5">
+                    <div class="row">
+                        <div>
+                            <input type="text" class="form-control pr-5" placeholder="Pesquisar nome ou racf" name="pesquisaUsuario" maxlength="10" id="btnPesquisarUsuario" />
+                        </div>
+                        @*COLOCAR SCRIPT DE PESQUISA EM DOC OU AQUI E REFERENCIAR*@
+                        <div>
+                            <img src="~/Resources/Icons/lupa.png" width="30" height="30" onclick="PesquisarUsuario()" />
+                        </div>
+                    </div>
+                </div>
+                <div class="mt-5" style="height: 550px; overflow: auto;">
+                    <div>
+                        <div id="cardsSubordinados">
+                            <div>
+
+                                @Html.Partial("_CardUsuarios")
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+</html>
+<script>
+    $(document).ready(function () {
+        if ('@TempData["Erro"]' != "") {
+            ToastrOption();
+            toastr.error('@TempData["Erro"]');
+        }
+
+        switch ('@TempData["Sucesso"]') {
+            case "D":
+                ToastrOption();
+                toastr.success('Usuário Desligado com Sucesso');
+                break;
+            case "S":
+                ToastrOption();
+                toastr.success('Usuário Cadastrado com Sucesso');
+                break;
+            case "A":
+                ToastrOption();
+                toastr.success('Usuário Avaliado com Sucesso');
+                break;
+            case "U":
+                ToastrOption();
+                toastr.success('Usuário atualizado com Sucesso');
+                break;
+        }
+
+        
+        function ToastrOption() {
+            toastr.options = {
+                "closeButton": true,
+                "debug": false,
+                "newestOnTop": false,
+                "progressBar": true,
+                "positionClass": "toast-top-left",
+                "preventDuplicates": false,
+                "onclick": null,
+                "showDuration": "300",
+                "hideDuration": "1000",
+                "timeOut": "5000",
+                "extendedTimeOut": "1000",
+                "showEasing": "swing",
+                "hideEasing": "linear",
+                "showMethod": "fadeIn",
+                "hideMethod": "fadeOut"
+            }
+        }
+    });
+
+
+function EfetuarDesligamento(racfUsuario, racfGestor) {
+    $.ajax({
+        type: "GET",
+        url: '@Url.Action("DesligamentoIndex", "Desligamento")',
+        data: { racfUsuario, racfGestor },
+        success: function (data) {
+        window.location.href = data.redirect;
+        }
+        })
+        }
+
+        function EfetuarAvaliacao(racfUsuario) {
+        $.ajax({
+        type: "GET",
+        url: '@Url.Action("AvaliacaoIndex", "Avaliacao")',
+        data: { racfUsuario },
+        success: function (data) {
+        window.location.href = data.redirect;
+        }
+        })
+        }
+
+        function EfetuarUpdate(racfUsuario) {
+        $.ajax({
+        type: "GET",
+        url: '@Url.Action("AtualizarIndex", "AtualizarUsuario")',
+        data: { racfUsuario},
+        success: function (data) {
+        window.location.href = data.redirect;
+        }
+        })
+        }
+
+
+</script>
